@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primaryColor: #6d28d9;
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGrey: #7c7c7c;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6;
+}
+
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+    background-color: var(--bodyColor);
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondaryColor);
+    height: 60px;
+}
+.navbar-center {
+    padding: 0 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-icon {
+    color: var(--primaryColor);
+}
+.nav-title {
+    color: var(--mainBlack);
+}
+.card-btn {
+    position: relative;
+    color: var(--primaryColor);
+}
+.card-btn i,
+.bar-icon i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.card-txt {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--mainRed);
+    border-radius: 100%;
+    color: var(--mainWhite);
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -8px;
+    right: -8px;
+}
+/* End of navbar */
+.product-center {
+    padding: 0 1.5rem;
+    max-width: 1000px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2.5rem;
+}
+.products {
+    background-color: var(--mainWhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    min-height: 150px;
+    transition: all ease 0.7s;
+}
+.section-title {
+    margin: 1.5rem;
+}
+.product-des {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+}
+.add-cart {
+    margin: 0.5rem;
+    outline: none;
+    border: 0;
+    background-color: var(--secondaryColor);
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5rem;
+    color: var(--primaryColor);
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
